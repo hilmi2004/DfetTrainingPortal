@@ -1,9 +1,8 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
+import React from 'react';
 
-createRoot(document.getElementById('form')!).render(
-  <StrictMode>
-    <div className="flex items-center justify-center bg-white">
+const Rename = () => {
+    return (
+        <div className="flex items-center justify-center bg-white">
             <div className="bg-[#f3f9ff] p-8 rounded-lg shadow-md w-full max-w-lg">
                 <h2 className="text-2xl font-bold text-center mb-6"></h2>
 
@@ -57,6 +56,7 @@ createRoot(document.getElementById('form')!).render(
                 <button className="mt-6 w-full bg-blue-600 text-white py-2 rounded-md hover:bg-blue-700">Submit</button>
             </div>
         </div>
-    
-    </StrictMode>
-)
+    );
+};
+
+export default Rename;
